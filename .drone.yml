@@ -15,9 +15,7 @@ steps:
     image: plugins/docker
     settings:
       repo: josaorg/kutt
-      tags:
-        - ${DRONE_COMMIT_SHA}
-        - latest
+      auto_tag: true
       username:
         from_secret: docker_username
       password:
