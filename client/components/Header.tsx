@@ -70,7 +70,7 @@ const Header: FC = () => {
     </Li>
   );
   const logout = isAuthenticated && (
-    <Li>
+    <Li color="#ffffff">
       <Link href="/logout">
         <ALink href="/logout" title="logout" fontSize="18px">
           Log out
