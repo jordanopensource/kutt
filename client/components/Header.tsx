@@ -134,15 +134,6 @@ const Header: FC = () => {
         as="ul"
         style={{ listStyle: "none" }}
       >
-        <Li>
-          <Flex display={["flex", "none"]}>
-            <Link href="/report">
-              <ALink href="/report" title="Report" fontSize={[14, 16]}>
-                Report
-              </ALink>
-            </Link>
-          </Flex>
-        </Li>
         {logout}
         {settings}
         {login}
