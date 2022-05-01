@@ -45,8 +45,8 @@ const Title = styled.h2`
 `;
 
 const Image = styled.img`
-  flex: 0 0 40%;
-  width: 40%;
+  flex: 0 0 100%;
+  width: 100%;
   max-width: 100%;
   height: auto;
 
