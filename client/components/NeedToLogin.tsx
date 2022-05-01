@@ -37,8 +37,9 @@ const Title = styled.h2`
   }
 
   @media only screen and (max-width: 448px) {
-    font-size: 18px;
-    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 24px;
   }
 `;
