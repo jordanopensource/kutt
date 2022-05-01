@@ -72,7 +72,7 @@ const Header: FC = () => {
   const logout = isAuthenticated && (
     <Li>
       <Link href="/logout">
-        <ALink href="/logout" title="logout" fontSize={[14, 16]}>
+        <ALink href="/logout" title="logout" fontSize="18px">
           Log out
         </ALink>
       </Link>
@@ -82,7 +82,7 @@ const Header: FC = () => {
     <Li>
       <Link href="/settings">
         <ALink href="/settings" title="Settings" forButton>
-          <Button height={[32, 40]}>Settings</Button>
+          <Button height={[32, 40]} fontSize="18px">Settings</Button>
         </ALink>
       </Link>
     </Li>
