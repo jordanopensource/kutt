@@ -30,7 +30,7 @@ const LogoImage = styled.div`
     display: flex;
     align-items: center;
     margin: 0 8px 0 0;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: inherit;
@@ -39,7 +39,7 @@ const LogoImage = styled.div`
 
   @media only screen and (max-width: 488px) {
     a {
-      font-size: 18px;
+      font-size: 24px;
     }
   }
 
