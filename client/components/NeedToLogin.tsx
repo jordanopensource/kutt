@@ -11,7 +11,7 @@ const Wrapper = styled(Flex).attrs({
   width: 1200,
   maxWidth: "98%",
   alignItems: "center",
-  margin: "150px 0 0",
+  margin: "0 0 0",
   flexDirection: ["column", "column", "row"]
 })`
   animation: ${fadeIn} 0.8s ease-out;
