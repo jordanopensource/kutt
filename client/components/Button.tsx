@@ -3,7 +3,7 @@ import { switchProp, prop, ifProp } from "styled-tools";
 import { Flex, BoxProps } from "reflexbox/styled-components";
 
 interface Props extends BoxProps {
-  color?: "purple" | "gray" | "blue" | "red";
+  color?: "purple" | "gray" | "blue" | "red" | "green";
   disabled?: boolean;
   icon?: string; // TODO: better typing
   isRound?: boolean;
@@ -23,19 +23,23 @@ export const Button = styled(Flex)<Props>`
     blue: "white",
     red: "white",
     purple: "white",
-    gray: "#444"
+    gray: "#444",
+    green: "#ffffff"
+
   })};
   background: ${switchProp(prop("color", "blue"), {
     blue: "linear-gradient(to right, #42a5f5, #2979ff)",
     red: "linear-gradient(to right, #ee3b3b, #e11c1c)",
     purple: "linear-gradient(to right, #7e57c2, #6200ea)",
-    gray: "linear-gradient(to right, #e0e0e0, #bdbdbd)"
+    gray: "linear-gradient(to right, #e0e0e0, #bdbdbd)",
+    green: "#0b96ab"
   })};
   box-shadow: ${switchProp(prop("color", "blue"), {
     blue: "0 5px 6px rgba(66, 165, 245, 0.5)",
     red: "0 5px 6px rgba(168, 45, 45, 0.5)",
     purple: "0 5px 6px rgba(81, 45, 168, 0.5)",
-    gray: "0 5px 6px rgba(160, 160, 160, 0.5)"
+    gray: "0 5px 6px rgba(160, 160, 160, 0.5)",
+    green: "0 0 0 rgba(160, 160, 160, 0.5)"
   })};
   border: none;
   border-radius: 100px;
@@ -64,7 +68,7 @@ Button.defaultProps = {
   py: 0,
   px: [24, 32],
   fontSize: [12, 13],
-  color: "blue",
+  color: "green",
   icon: "",
   isRound: false
 };
