@@ -112,7 +112,7 @@ const Header: FC = () => {
             }}
           >
             <img src="/images/logo.svg" alt="JOSA - Logo" />
-            {publicRuntimeConfig.SITE_NAME}
+            .link
           </a>
         </LogoImage>
         {!isMobile && (
