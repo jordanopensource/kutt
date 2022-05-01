@@ -97,7 +97,7 @@ const Header: FC = () => {
 
   return (
     <Flex
-      width={1232}
+      width={2000}
       maxWidth="100%"
       p={[16, "0 32px"]}
       mb={[32, 0]}
