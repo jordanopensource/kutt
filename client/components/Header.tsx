@@ -30,7 +30,7 @@ const LogoImage = styled.div`
     display: flex;
     align-items: center;
     margin: 0 8px 0 0;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: normal;
     font-family: 'Brush Script MT', cursive;
     text-decoration: none;
@@ -40,7 +40,7 @@ const LogoImage = styled.div`
 
   @media only screen and (max-width: 488px) {
     a {
-      font-size: 24px;
+      font-size: 21px;
     }
   }
 
