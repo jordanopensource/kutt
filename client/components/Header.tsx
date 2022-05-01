@@ -31,9 +31,9 @@ const LogoImage = styled.div`
     align-items: center;
     margin: 0 8px 0 0;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
-    color: inherit;
+    color: #ffffff;
     transition: border-color 0.2s ease-out;
   }
 
