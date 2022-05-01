@@ -48,6 +48,13 @@ const LogoImage = styled.div`
     width: 120px;
     margin-right: 3px;
   }
+
+  @media (min-width: 639px) and (max-width: 832px) {
+    img {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
 `;
 
 const Header: FC = () => {
