@@ -32,6 +32,7 @@ const LogoImage = styled.div`
     margin: 0 8px 0 0;
     font-size: 24px;
     font-weight: normal;
+    font-family: 'Brush Script MT', cursive;
     text-decoration: none;
     color: #ffffff;
     transition: border-color 0.2s ease-out;
