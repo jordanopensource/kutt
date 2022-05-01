@@ -11,11 +11,15 @@ const Wrapper = styled(Flex).attrs({
   width: 1200,
   maxWidth: "98%",
   alignItems: "center",
-  margin: "0 0 0",
+  margin: "150px 0 0",
   flexDirection: ["column", "column", "row"]
 })`
   animation: ${fadeIn} 0.8s ease-out;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+
+  @media (min-width: 832px) {
+    margin-top: 0;
+  }
 
   a {
     text-decoration: none;
@@ -63,7 +67,7 @@ const NeedToLogin = () => (
   <Wrapper>
     <Col
       alignItems={["center", "center", "flex-start"]}
-      mt={-130}
+      mt={-132}
       mb={[32, 32, 0]}
     >
       <Title>
