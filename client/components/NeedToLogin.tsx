@@ -66,6 +66,15 @@ const NeedToLogin = () => (
       <Title>
         JOSA's Own Link Shortener
       </Title>
+      <p>
+        Life is too short to not have your links 
+        shortened. Start now to magically convert 
+        long URLs into 6-character long ones under 
+        the JOSA brand.
+      </p>
+      <p>
+        <b>Good things come in small links.</b>
+      </p>
     </Col>
     <Image src="/images/bots.svg" />
   </Wrapper>
