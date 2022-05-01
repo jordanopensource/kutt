@@ -124,17 +124,6 @@ const Header: FC = () => {
             m={0}
             p={0}
           >
-            <Li>
-              <ALink
-                href="//github.com/thedevs-network/kutt"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
-                fontSize={[14, 16]}
-              >
-                GitHub
-              </ALink>
-            </Li>
           </Flex>
         )}
       </Flex>
