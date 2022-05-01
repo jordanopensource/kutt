@@ -60,7 +60,7 @@ const NeedToLogin = () => (
   <Wrapper>
     <Col
       alignItems={["center", "center", "flex-start"]}
-      mt={-32}
+      mt={-130}
       mb={[32, 32, 0]}
     >
       <Title>
