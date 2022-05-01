@@ -63,7 +63,7 @@ const NeedToLogin = () => (
       mb={[32, 32, 0]}
     >
       <Title>
-        Manage links, set custom <b>domains</b> and view <b>stats</b>.
+        JOSA's Own Link Shortener
       </Title>
       <Link href="/login">
         <a href="/login" title="login / signup">
@@ -75,4 +75,4 @@ const NeedToLogin = () => (
   </Wrapper>
 );
 
-export default NeedToLogin;
+export default NeedToLogin; 
