@@ -52,7 +52,7 @@ const Image = styled.img`
 
   @media only screen and (max-width: 768px) {
     flex-basis: 100%;
-    width: 100%;
+    width: 70%;
   }
 `;
 
