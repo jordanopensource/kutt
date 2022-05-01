@@ -97,7 +97,7 @@ const Header: FC = () => {
       height={["auto", "auto", 102]}
       justifyContent="space-between"
       alignItems={["flex-start", "center"]}
-      backgroundColor="#000000"
+      backgroundColor="#1a1f21"
     >
       <Flex
         flexDirection={["column", "row"]}
