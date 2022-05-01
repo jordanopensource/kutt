@@ -23,13 +23,13 @@ const Wrapper = styled(Flex).attrs({
 `;
 
 const Title = styled.h2`
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 300;
   padding-right: 32px;
   margin-bottom: 48px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
     padding-right: 0;
     margin-bottom: 32px;
