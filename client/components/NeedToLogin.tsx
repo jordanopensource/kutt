@@ -71,7 +71,7 @@ const NeedToLogin = () => (
         </a>
       </Link>
     </Col>
-    <Image src="/images/callout.png" />
+    <Image src="/images/bots.svg" />
   </Wrapper>
 );
 
