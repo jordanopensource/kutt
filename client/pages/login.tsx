@@ -11,6 +11,7 @@ import { useStoreState, useStoreActions } from "../store";
 import { APIv2, DISALLOW_REGISTRATION } from "../consts";
 import { ColCenterV } from "../components/Layout";
 import AppWrapper from "../components/AppWrapper";
+import NeedToLogin from "../components/NeedToLogin";
 import { TextInput } from "../components/Input";
 import { fadeIn } from "../helpers/animations";
 import { Button } from "../components/Button";
@@ -97,6 +98,7 @@ const LoginPage = () => {
 
   return (
     <AppWrapper>
+      <NeedToLogin />
       <ColCenterV maxWidth="100%" px={3} flex="0 0 auto" mt={4}>
         {verifying ? (
           <H2 textAlign="center" light>
