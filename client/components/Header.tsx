@@ -102,7 +102,7 @@ const Header: FC = () => {
       p={[16, "0 32px"]}
       mb={[32, 0]}
       height={["auto", "auto", 102]}
-      justifyContent="space-between"
+      justifyContent="space-around"
       alignItems={["flex-start", "center"]}
       backgroundColor="#1a1f21"
     >
