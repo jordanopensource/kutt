@@ -42,7 +42,7 @@ export const Button = styled(Flex)<Props>`
     green: "0 0 0 rgba(160, 160, 160, 0.5)"
   })};
   border: none;
-  border-radius: 100px;
+  border-radius: 0;
   transition: all 0.4s ease-out;
   cursor: pointer;
   overflow: hidden;
