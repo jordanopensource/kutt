@@ -133,6 +133,7 @@ const Header: FC = () => {
         m={0}
         p={0}
         justifyContent="flex-end"
+        flexWrap="wrap-reverse"
         as="ul"
         style={{ listStyle: "none" }}
       >
