@@ -73,7 +73,7 @@ const Header: FC = () => {
     <Li color="#ffffff">
       <Link href="/logout">
         <ALink href="/logout" title="logout" fontSize="18px">
-          Log out
+          LOGOUT
         </ALink>
       </Link>
     </Li>
@@ -82,7 +82,7 @@ const Header: FC = () => {
     <Li>
       <Link href="/settings">
         <ALink href="/settings" title="Settings" forButton>
-          <Button height={[32, 40]} fontSize="18px">Settings</Button>
+          <Button height={[32, 40]} fontSize="18px">SETTINGS</Button>
         </ALink>
       </Link>
     </Li>
