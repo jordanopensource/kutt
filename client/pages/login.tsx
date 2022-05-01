@@ -18,6 +18,7 @@ import { Button } from "../components/Button";
 import Text, { H2 } from "../components/Text";
 import ALink from "../components/ALink";
 import Icon from "../components/Icon";
+import Footer from "../components/Footer";
 
 const LoginForm = styled(Flex).attrs({
   as: "form",
@@ -182,6 +183,7 @@ const LoginPage = () => {
           </LoginForm>
         )}
       </ColCenterV>
+      <Footer />
     </AppWrapper>
   );
 };
