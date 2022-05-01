@@ -132,7 +132,7 @@ const Header: FC = () => {
       <RowCenterV
         m={0}
         p={0}
-        justifyContent="flex-end"
+        justifyContent="center"
         flexWrap="wrap-reverse"
         as="ul"
         style={{ listStyle: "none" }}
