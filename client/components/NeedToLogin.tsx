@@ -56,11 +56,11 @@ const Image = styled.img`
   max-width: 100%;
   height: auto;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 831px) {
     flex-basis: 100%;
     width: 80%;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 10%;
   }
 `;
