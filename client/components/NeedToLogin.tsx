@@ -20,10 +20,6 @@ const Wrapper = styled(Flex).attrs({
   @media (min-width: 832px) {
     margin-top: 0;
   }
-
-  a {
-    text-decoration: none;
-  }
 `;
 
 const Title = styled.h2`
