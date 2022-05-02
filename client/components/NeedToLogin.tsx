@@ -31,7 +31,7 @@ const Title = styled.h2`
   @media only screen and (max-width: 768px) {
     font-size: 30px;
     margin-bottom: 32px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   @media only screen and (max-width: 448px) {
