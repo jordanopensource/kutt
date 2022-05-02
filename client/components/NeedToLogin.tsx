@@ -72,7 +72,7 @@ const Image = styled.img`
   }
 
   @media (min-width: 460px) and (max-width: 831px) {
-    width: 60%;
+    width: 80%;
   }
 `;
 
