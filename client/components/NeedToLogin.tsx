@@ -20,6 +20,11 @@ const Wrapper = styled(Flex).attrs({
   @media (min-width: 832px) {
     margin-top: 0;
   }
+
+  @media (max-width: 831px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 `;
 
 const Title = styled.h2`
