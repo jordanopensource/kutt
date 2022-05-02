@@ -26,7 +26,7 @@ const Footer: FC = () => {
     >
       {!isAuthenticated && <ReCaptcha />}
       <Text fontSize={[12, 13]} py={2}>
-        Made with love by{" "}
+        A website of JOSA{" "}
         <ALink href="//thedevs.network/" title="The Devs">
           The Devs
         </ALink>
