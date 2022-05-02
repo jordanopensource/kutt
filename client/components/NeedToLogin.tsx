@@ -67,8 +67,9 @@ const NeedToLogin = () => (
   <Wrapper>
     <Col
       alignItems={["center", "center", "flex-start"]}
-      mt={-132}
-      mb={[32, 32, 0]}
+      paddingLeft="30px"
+      paddingRight="30px"
+      paddingTop="0px"
     >
       <Title>
         JOSA's Own Link Shortener
