@@ -29,7 +29,7 @@ const Wrapper = styled(Flex).attrs({
 
 const Title = styled.h2`
   font-size: 30px;
-  font-weight: 300;
+  font-weight: bold;
   margin-bottom: 48px;
   text-align: left;
 
@@ -41,7 +41,6 @@ const Title = styled.h2`
 
   @media only screen and (max-width: 448px) {
     font-size: 30px;
-    font-weight: bold;
     margin-bottom: 24px;
   }
 `;
