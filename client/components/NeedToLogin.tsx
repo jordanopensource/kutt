@@ -25,13 +25,11 @@ const Wrapper = styled(Flex).attrs({
 const Title = styled.h2`
   font-size: 30px;
   font-weight: 300;
-  padding-right: 32px;
   margin-bottom: 48px;
+  text-align: left;
 
   @media only screen and (max-width: 768px) {
     font-size: 30px;
-    text-align: center;
-    padding-right: 0;
     margin-bottom: 32px;
     padding: 0 40px;
   }
@@ -39,7 +37,6 @@ const Title = styled.h2`
   @media only screen and (max-width: 448px) {
     font-size: 30px;
     font-weight: bold;
-    text-align: left;
     margin-bottom: 24px;
   }
 `;
@@ -62,9 +59,7 @@ const Image = styled.img`
 const NeedToLogin = () => (
   <Wrapper>
     <Col
-      alignItems={["center", "center", "flex-start"]}
-      paddingLeft="30px"
-      paddingRight="30px"
+      alignItems={["left", "left", "flex-start"]}
       paddingTop="0px"
     >
       <Title>
