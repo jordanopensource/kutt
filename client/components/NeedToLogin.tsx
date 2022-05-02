@@ -67,6 +67,12 @@ const Image = styled.img`
   @media (min-width: 832px) {
     padding-top: 10%;
     padding-bottom: 10%;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  @media (min-width: 460px) and (max-width: 831px) {
+    width: 60%;
   }
 `;
 
