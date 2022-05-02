@@ -63,6 +63,11 @@ const Image = styled.img`
     margin-top: 10%;
     margin-bottom: 10%;
   }
+
+  @media (min-width: 832px) {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 `;
 
 const NeedToLogin = () => (
