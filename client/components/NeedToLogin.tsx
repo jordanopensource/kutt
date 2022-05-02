@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import styled from "styled-components";
 import { Flex } from "reflexbox/styled-components";
 
-import { Button } from "./Button";
 import { fadeIn } from "../helpers/animations";
 import { Col } from "./Layout";
 
