@@ -84,7 +84,7 @@ const NeedToLogin = () => (
     <Col
       alignItems={["left", "left", "flex-start"]}
       paddingTop="0px"
-      backgroundColor="#edeeef"
+      backgroundColor="#f1f2f4"
     >
       <Title>
         JOSA's Own Link Shortener
