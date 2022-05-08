@@ -54,15 +54,15 @@ const Title = styled.h2`
 `;
 
 const Image = styled.img`
-  flex: 0 0 100%;
-  width: 100%;
-  max-width: 100%;
+  flex: 0 0 60%;
+  width: 60%;
+  max-width: 60%;
   height: auto;
 
   @media only screen and (max-width: 831px) {
     flex-basis: 100%;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 20%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
