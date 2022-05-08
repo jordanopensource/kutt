@@ -47,6 +47,10 @@ const Title = styled.h2`
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  @media (max-width: 639px) {
+    margin-top: -10px;
+  }
 `;
 
 const Image = styled.img`
