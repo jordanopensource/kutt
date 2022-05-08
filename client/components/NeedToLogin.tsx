@@ -22,6 +22,10 @@ const Wrapper = styled(Flex).attrs({
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  @media (min-width: 832px) and (max-width: 1076px) {
+    background-color: #ee4d7a;
+  }
 `;
 
 const Title = styled.h2`
@@ -71,11 +75,7 @@ const Image = styled.img`
     padding-top: 10%;
     padding-bottom: 10%;
     margin-left: 10%;
-    width: 80%;
-  }
-
-  @media (min-width: 460px) and (max-width: 831px) {
-    width: 80%;
+    width: 100%;
   }
 `;
 
@@ -84,6 +84,7 @@ const NeedToLogin = () => (
     <Col
       alignItems={["left", "left", "flex-start"]}
       paddingTop="0px"
+      backgroundColor="#edeeef"
     >
       <Title>
         JOSA's Own Link Shortener
