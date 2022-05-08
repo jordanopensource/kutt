@@ -6,7 +6,6 @@ import { fadeIn } from "../helpers/animations";
 import { Col } from "./Layout";
 
 const Wrapper = styled(Flex).attrs({
-  width: 1200,
   maxWidth: "100%",
   alignItems: "center",
   margin: "0 0 0",
