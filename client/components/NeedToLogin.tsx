@@ -16,6 +16,10 @@ const Wrapper = styled(Flex).attrs({
 
   @media (min-width: 832px) {
     margin-top: 0;
+
+    p {
+      margin-left: 30%;
+    }
   }
  
   p {
@@ -35,6 +39,10 @@ const Title = styled.h2`
   text-align: left;
   padding-left: 10%;
   padding-right: 10%;
+
+  @media (min-width: 832px) {
+    margin-left: 30%;
+  }
 
   @media only screen and (max-width: 768px) {
     font-size: 30px;
@@ -75,6 +83,7 @@ const Image = styled.img`
     padding-top: 10%;
     padding-bottom: 10%;
     margin-left: 10%;
+    padding-right: 10%;
     width: 100%;
   }
 `;
