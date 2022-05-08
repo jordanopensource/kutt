@@ -24,40 +24,9 @@ const Footer: FC = () => {
       backgroundColor="#1a1f21"
       p={isAuthenticated ? 2 : 24}
     >
-      {!isAuthenticated && <ReCaptcha />}
+      {isAuthenticated && <ReCaptcha />}
       <Text fontSize={[16, 17]} py={2} color="#ffffff">
         A website of JOSA{" "}
-        <ALink href="//thedevs.network/" title="The Devs">
-          The Devs
-        </ALink>
-        .{" | "}
-        <ALink
-          href="https://github.com/thedevs-network/kutt"
-          title="GitHub"
-          target="_blank"
-        >
-          GitHub
-        </ALink>
-        {" | "}
-        <ALink href="/terms" title="Terms of Service">
-          Terms of Service
-        </ALink>
-        {" | "}
-        <ALink href="/report" title="Report abuse">
-          Report Abuse
-        </ALink>
-        {publicRuntimeConfig.CONTACT_EMAIL && (
-          <>
-            {" | "}
-            <ALink
-              href={`mailto:${publicRuntimeConfig.CONTACT_EMAIL}`}
-              title="Contact us"
-            >
-              Contact us
-            </ALink>
-          </>
-        )}
-        .
       </Text>
     </ColCenter>
   );
