@@ -94,9 +94,9 @@ const NeedToLogin = () => (
         <b>Good things come in small links.</b>
       </p>
     </Col>
-    <div>
+    <Col>
       <Image src="/images/bots.svg" />
-    </div>
+    </Col>
   </Wrapper>
 );
 
