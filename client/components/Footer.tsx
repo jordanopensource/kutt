@@ -26,7 +26,12 @@ const Footer: FC = () => {
     >
       {isAuthenticated && <ReCaptcha />}
       <Text fontSize={[16, 17]} py={2} color="#ffffff">
-        A website of JOSA{" "}
+         A website of{" "} 
+         <img width="16px" src="images/JOSALogoFooter.png" />
+         {" "}JOSA{" . "} 
+         Powered by{" "}  
+         <img width="16px" src="images/favicon-16x16.png" />
+         {"  "}Kutt{" . "} 
       </Text>
     </ColCenter>
   );
