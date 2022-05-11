@@ -5,7 +5,6 @@ import showRecaptcha from "../helpers/recaptcha";
 import { useStoreState } from "../store";
 import { ColCenter } from "./Layout";
 import ReCaptcha from "./ReCaptcha";
-import ALink from "./ALink";
 import Text from "./Text";
 
 const { publicRuntimeConfig } = getConfig();
