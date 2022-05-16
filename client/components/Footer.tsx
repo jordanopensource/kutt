@@ -32,6 +32,9 @@ const Footer: FC = () => {
          <img width="16px" src="images/favicon-16x16.png" />
          {"  "}Kutt{" . "} 
       </Text>
+      <Text>
+        <img src="images/githubFooter.png" alt="GitHub Logo" />
+      </Text>
     </ColCenter>
   );
 };
