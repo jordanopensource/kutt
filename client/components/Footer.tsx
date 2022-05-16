@@ -35,6 +35,7 @@ const Footer: FC = () => {
       <Text>
         <img src="images/githubFooter.png" alt="GitHub Logo" />
         <img src="images/twitterFooter.png" alt="Twitter Logo" />
+        <img src="images/facebookFooter.png" alt="Facebook Logo" />
       </Text>
     </ColCenter>
   );
