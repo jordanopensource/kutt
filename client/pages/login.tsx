@@ -149,22 +149,7 @@ const LoginPage = () => {
                 />
                 Log in
               </Button>
-              {!DISALLOW_REGISTRATION && (
-                <Button
-                  flex="1 1 auto"
-                  ml={["8px", 16]}
-                  height={[44, 56]}
-                  color="purple"
-                  onClick={onSubmit("signup")}
-                >
-                  <Icon
-                    name={loading.signup ? "spinner" : "signup"}
-                    stroke="white"
-                    mr={2}
-                  />
-                  Sign up
-                </Button>
-              )}
+            
             </Flex>
             <Link href="/reset-password">
               <ALink
