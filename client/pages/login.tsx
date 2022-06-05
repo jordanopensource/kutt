@@ -108,7 +108,7 @@ const LoginPage = () => {
           </H2>
         ) : (
           <LoginForm id="login-form" onSubmit={onSubmit("login")}>
-            <Text {...label("email")} as="label" mb={2} bold>
+            <Text {...label("email")} as="label" mb={2} bold color="#ffffff">
               Email address:
             </Text>
             <TextInput
@@ -122,8 +122,8 @@ const LoginPage = () => {
               maxWidth="100%"
               autoFocus
             />
-            <Text {...label("password")} as="label" mb={2} bold>
-              Password{!DISALLOW_REGISTRATION ? " (min chars: 8)" : ""}:
+            <Text {...label("password")} as="label" mb={2} bold color="#ffffff">
+              Password:
             </Text>
             <TextInput
               {...password("password")}
