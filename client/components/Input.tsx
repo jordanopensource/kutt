@@ -30,7 +30,7 @@ export const TextInput = styled(Flex).attrs({
   background-color: white;
   box-shadow: 0 10px 35px hsla(200, 15%, 70%, 0.2);
   border: none;
-  border-radius: ${prop("br", "100px")};
+  border-radius: 0;
   border-bottom: 5px solid #f5f5f5;
   border-bottom-width: ${prop("bbw", "5px")};
   transition: all 0.5s ease-out;
