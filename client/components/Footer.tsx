@@ -26,16 +26,16 @@ const Footer: FC = () => {
       {isAuthenticated && <ReCaptcha />}
       <Text fontSize={[16, 17]} py={2} color="#ffffff">
          A website of{" "} 
-         <img width="16px" src="images/JOSALogoFooter.png" />
+         <img width="20px" src="images/JOSALogoFooter.png" />
          {" "}JOSA{" . "} 
          Powered by{" "}  
          <img width="16px" src="images/favicon-16x16.png" />
          {"  "}Kutt{" . "} 
       </Text>
-      <Text>
-        <img src="images/githubFooter.png" alt="GitHub Logo" />
-        <img src="images/twitterFooter.png" alt="Twitter Logo" />
-        <img src="images/facebookFooter.png" alt="Facebook Logo" />
+      <Text> 
+        <img width="40" src="images/githubFooter.png" alt="GitHub Logo" />
+        <img width="35" src="images/twitterFooter.png" alt="Twitter Logo" />
+        <img width="30" src="images/facebookFooter.png" alt="Facebook Logo" />
       </Text>
     </ColCenter>
   );
