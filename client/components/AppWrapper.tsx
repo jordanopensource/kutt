@@ -20,7 +20,7 @@ const Wrapper = styled(Flex)`
     border: none;
   }
 
-  background-color: #000000;
+  background-color: #1a1f21;
 `;
 
 const AppWrapper = ({ children }: { children: any }) => {
