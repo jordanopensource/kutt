@@ -19,6 +19,8 @@ const Wrapper = styled(Flex)`
   *::-moz-focus-inner {
     border: none;
   }
+
+  background-color: #000000;
 `;
 
 const AppWrapper = ({ children }: { children: any }) => {
