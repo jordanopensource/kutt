@@ -33,9 +33,9 @@ const Footer: FC = () => {
          {"  "}Kutt{" . "} 
       </Text>
       <Text> 
-        <img width="40" src="images/githubFooter.png" alt="GitHub Logo" />
-        <img width="35" src="images/twitterFooter.png" alt="Twitter Logo" />
-        <img width="30" src="images/facebookFooter.png" alt="Facebook Logo" />
+        <img width="25" src="images/github.svg" alt="GitHub Logo" />
+        <img width="25" src="images/twitter.svg" alt="Twitter Logo" />
+        <img width="25" src="images/facebook.svg" alt="Facebook Logo" />
       </Text>
     </ColCenter>
   );
