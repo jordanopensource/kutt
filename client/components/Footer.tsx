@@ -79,6 +79,11 @@ const ImageContainer = styled.div`
     padding-left: 1.25rem;
     padding-right: 1.25rem; 
   }
+
+  img {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
 `;
 
   return (
@@ -90,7 +95,30 @@ const ImageContainer = styled.div`
         <OtherInfo>
           <SocialMedia>
             <ImageContainer>
-              
+              <a href="https://github.com/jordanopensource"
+                target="_blank">
+                <img src="images/github.svg"
+                  alt="Github Account"
+                  width="auto"
+                  height="20"
+                  />
+              </a>
+              <a href="https://twitter.com/jo_osa"
+                target="_blank">
+                <img src="images/twitter.svg"
+                  alt="Twitter Account"
+                  width="auto"
+                  height="20"
+                  />
+              </a>
+              <a href="https://www.facebook.com/jordanopensource/"
+                target="_blank">
+                  <img src="images/facebook.svg"
+                    alt="Facebook Page"
+                    width="auto"
+                    height="20"
+                    />
+              </a>
             </ImageContainer>
           </SocialMedia>
           <Copyright>
