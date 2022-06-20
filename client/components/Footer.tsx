@@ -15,7 +15,7 @@ const FooterSection = styled.div`
     margin-left: 0;
     padding-bottom: 0;
   }
-`;
+`; 
 
 const Footer: FC = () => {
   const FooterContainer = styled.div`
@@ -59,13 +59,23 @@ const OtherInfo = styled.div`
 `;
 
 const Copyright = styled.div`
-
+  padding-top: 1.25rem; 
+  text-align: center;
+  
+  @media (min-width: 992px) {
+    text-align: right;
+  }
 `;
 
 const SocialMedia = styled.div`
   display: flex; 
   justify-content: center; 
   align-items: center; 
+
+  img {
+    display: inline; 
+    height: 1rem; 
+  }
 
   @media (min-width: 992px) {
     justify-content: flex-end;
@@ -86,6 +96,18 @@ const ImageContainer = styled.div`
   }
 `;
 
+const Para = styled.div`
+  font-size: 1rem;
+  line-height: 1rem; 
+  color: #ffffff; 
+  font-weight:400;
+
+  @media (min-width: 992px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+  }
+`;
+
   return (
     <FooterSection>
       <FooterContainer>
@@ -97,7 +119,8 @@ const ImageContainer = styled.div`
             <ImageContainer>
               <a href="https://github.com/jordanopensource"
                 target="_blank">
-                <img src="images/github.svg"
+                <img 
+                  src="images/github.svg"
                   alt="Github Account"
                   width="auto"
                   height="20"
@@ -105,7 +128,8 @@ const ImageContainer = styled.div`
               </a>
               <a href="https://twitter.com/jo_osa"
                 target="_blank">
-                <img src="images/twitter.svg"
+                <img 
+                  src="images/twitter.svg"
                   alt="Twitter Account"
                   width="auto"
                   height="20"
@@ -113,7 +137,8 @@ const ImageContainer = styled.div`
               </a>
               <a href="https://www.facebook.com/jordanopensource/"
                 target="_blank">
-                  <img src="images/facebook.svg"
+                  <img 
+                    src="images/facebook.svg"
                     alt="Facebook Page"
                     width="auto"
                     height="20"
@@ -122,7 +147,15 @@ const ImageContainer = styled.div`
             </ImageContainer>
           </SocialMedia>
           <Copyright>
-
+            <Para>
+              <img 
+                src="images/cc.svg" 
+                alt="CC"
+                height="16"
+                width="auto"
+                />
+               {" 2022, JOSA - Jordan Open Source Association "}
+            </Para>
           </Copyright>
         </OtherInfo>
       </FooterContainer>
@@ -130,4 +163,4 @@ const ImageContainer = styled.div`
   );
 };
 
-export default Footer;
+export default Footer;        
