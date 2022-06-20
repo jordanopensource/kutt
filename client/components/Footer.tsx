@@ -1,43 +1,104 @@
 import React, { FC, useEffect } from "react";
-import getConfig from "next/config";
+import styled from "styled-components";
 
-import showRecaptcha from "../helpers/recaptcha";
-import { useStoreState } from "../store";
-import { ColCenter } from "./Layout";
-import ReCaptcha from "./ReCaptcha";
-import Text from "./Text";
+const FooterSection = styled.div`
+  background-color: #1a1f21;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.75rem;
 
-const { publicRuntimeConfig } = getConfig();
+  @media (min-width: 992px) {
+    height: 16rem;
+    padding-top: 7rem;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+`;
 
 const Footer: FC = () => {
-  const { isAuthenticated } = useStoreState(s => s.auth);
+  const FooterContainer = styled.div`
+    font-color: #ffffff;
+    align-items: center;
+    height: 100%;
 
-  useEffect(() => {
-    showRecaptcha();
-  }, []);
+    @media (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 6rem;
+      padding-left: 6rem;
+      margin-right: 0;
+      margin-left: 0;
+    }
+`;
+
+const WebsiteInfo = styled.div`
+  display: flex; 
+  padding: 2rem; 
+  justify-content: center; 
+  align-items: center;  
+
+  @media (min-width: 992px) {
+    padding: 0;
+    justify-content: flex-start;
+  }
+`;
+
+const OtherInfo = styled.div`
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  padding-bottom: 2rem; 
+
+  @media (min-width: 992px) {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+`;
+
+const Copyright = styled.div`
+
+`;
+
+const SocialMedia = styled.div`
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+
+  @media (min-width: 992px) {
+    justify-content: flex-end;
+  }
+`;
+
+const ImageContainer = styled.div`
+  display: flex; 
+
+  @media (min-width: 992px) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+  }
+`;
 
   return (
-    <ColCenter
-      as="footer"
-      width={1}
-      backgroundColor="#1a1f21"
-      p={isAuthenticated ? 2 : 24}
-    >
-      {isAuthenticated && <ReCaptcha />}
-      <Text fontSize={[16, 17]} py={2} color="#ffffff">
-         A website of{" "} 
-         <img width="20px" src="images/JOSALogoFooter.png" />
-         {" "}JOSA{" . "} 
-         Powered by{" "}  
-         <img width="16px" src="images/favicon-16x16.png" />
-         {"  "}Kutt{" . "} 
-      </Text>
-      <Text> 
-        <img width="25" src="images/github.svg" alt="GitHub Logo" />
-        <img width="25" src="images/twitter.svg" alt="Twitter Logo" />
-        <img width="25" src="images/facebook.svg" alt="Facebook Logo" />
-      </Text>
-    </ColCenter>
+    <FooterSection>
+      <FooterContainer>
+        <WebsiteInfo>
+
+        </WebsiteInfo>
+        <OtherInfo>
+          <SocialMedia>
+            <ImageContainer>
+              
+            </ImageContainer>
+          </SocialMedia>
+          <Copyright>
+
+          </Copyright>
+        </OtherInfo>
+      </FooterContainer>
+    </FooterSection>
   );
 };
 
