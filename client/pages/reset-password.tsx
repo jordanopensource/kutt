@@ -14,6 +14,7 @@ import { Button } from "../components/Button";
 import Text, { H2 } from "../components/Text";
 import { Col } from "../components/Layout";
 import { TokenPayload } from "../types";
+import NeedToLogin from "../components/NeedToLogin";
 import { useMessage } from "../hooks";
 import Icon from "../components/Icon";
 import { API, APIv2 } from "../consts";
@@ -64,6 +65,7 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
   // FIXME: make a container for width
   return (
     <AppWrapper>
+      <NeedToLogin />
       <Col width={600} maxWidth="100%" px={3}>
         <H2 my={3} bold>
           Reset password
