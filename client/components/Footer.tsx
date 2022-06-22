@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const FooterSection = styled.div`
   background-color: #1a1f21;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 1.75rem;
+  width: 100%;
 
   @media (min-width: 992px) {
     height: 16rem;
