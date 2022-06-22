@@ -33,6 +33,10 @@ const Email = styled.span`
   border-bottom: 1px dotted #999;
 `;
 
+const LoginWrapper = styled.div `
+  background-color: #1a1f21;
+`;
+
 const LoginPage = () => {
   const { isAuthenticated } = useStoreState(s => s.auth);
   const login = useStoreActions(s => s.auth.login);
@@ -100,6 +104,7 @@ const LoginPage = () => {
   return (
     <AppWrapper>
       <NeedToLogin />
+      <LoginWrapper>
       <ColCenterV maxWidth="100%" px={3} flex="0 0 auto" mt={4}>
         {verifying ? (
           <H2 textAlign="center" light>
@@ -168,6 +173,7 @@ const LoginPage = () => {
           </LoginForm>
         )}
       </ColCenterV>
+      </LoginWrapper>
       <Footer />
     </AppWrapper>
   );
