@@ -41,7 +41,7 @@ export const TextInput = styled(Flex).attrs({
   }
 
   ::placeholder {
-    font-size: ${withProp("placeholderSize", s => s[0] || 14)}px;
+    font-size: 1rem;
     letter-spacing: 0.05em;
     color: #888;
   }
@@ -59,16 +59,13 @@ export const TextInput = styled(Flex).attrs({
     letter-spacing: 0.1em;
     border-bottom-width: ${prop("bbw", "6px")};
     ::placeholder {
-      font-size: ${withProp(
-        "placeholderSize",
-        s => s[2] || s[1] || s[0] || 15
-      )}px;
+      font-size: 1rem;
     }
   }
 
   @media screen and (min-width: 40em) {
     ::placeholder {
-      font-size: ${withProp("placeholderSize", s => s[1] || s[0] || 15)}px;
+      font-size: 1rem;
     }
   }
 `;

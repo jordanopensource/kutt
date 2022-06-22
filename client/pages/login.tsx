@@ -115,7 +115,7 @@ const LoginPage = () => {
           </H2>
         ) : (
           <LoginForm id="login-form" onSubmit={onSubmit("login")}>
-            <Text {...label("email")} as="label" mb={2} bold color="#ffffff">
+            <Text {...label("email")} marginX="1rem" as="label" mb={2} bold color="#ffffff" fontSize="1.15rem">
               Email address:
             </Text>
             <TextInput
@@ -124,12 +124,13 @@ const LoginPage = () => {
               height={[56, 64, 72]}
               fontSize={[15, 16]}
               px={[4, 40]}
+              marginX="1rem"
               mb={[24, 4]}
               width={[300, 400]}
               maxWidth="100%"
               autoFocus
             />
-            <Text {...label("password")} as="label" mb={2} bold color="#ffffff">
+            <Text {...label("password")} marginX="1rem" as="label" mb={2} bold color="#ffffff" fontSize="1.15rem">
               Password:
             </Text>
             <TextInput
@@ -141,13 +142,16 @@ const LoginPage = () => {
               width={[300, 400]}
               maxWidth="100%"
               mb={[24, 4]}
+              marginX="1rem"
             />
             <Flex justifyContent="center">
               <Button
+                alignSelf="center"
                 flex="1 1 auto"
-                mr={!DISALLOW_REGISTRATION ? ["8px", 16] : 0}
                 height={[44, 56]}
                 onClick={onSubmit("login")}
+                maxWidth={[150, 150]}
+                fontSize="1.15rem"
               >
                 <Icon
                   name={loading.login ? "spinner" : "login"}
@@ -162,14 +166,15 @@ const LoginPage = () => {
               <ALink
                 href="/reset-password"
                 title="Forget password"
-                fontSize={14}
-                alignSelf="flex-start"
+                fontSize="1rem"
+                alignSelf="center"
                 my={16}
+                color="#0b96ab !important"
               >
                 Forgot your password?
               </ALink>
             </Link>
-            <Text color="red" mt={1} normal>
+            <Text alignSelf="center" color="red" mb={2} mt={1} normal>
               {error}
             </Text>
           </LoginForm>
