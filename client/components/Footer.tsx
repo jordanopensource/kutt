@@ -37,8 +37,12 @@ const Footer: FC = () => {
 const WebsiteInfo = styled.div`
   display: flex; 
   padding: 2rem; 
+  margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: center; 
   align-items: center;  
+  font-size: 1.5rem;
+  color: #ffffff;
 
   @media (min-width: 992px) {
     padding: 0;
