@@ -185,7 +185,7 @@ const Shortener = () => {
   );
 
   return (
-    <Col width={800} maxWidth="100%" px={[3]} flex="0 0 auto" mt={5}>
+    <Col width={800} maxWidth="97%" px={[3]} flex="0 0 auto" mt={5}>
       <Flex
         as="form"
         id="shortenerform"
@@ -202,7 +202,7 @@ const Shortener = () => {
           fontSize={[18, 20, 22]}
           aria-label="target"
           width={1}
-          height={[58, 64, 72]}
+          height={[48, 54, 62]}
           px={0}
           pr={[48, 84]}
           pl={[32, 40]}
@@ -293,7 +293,7 @@ const Shortener = () => {
                 pl={[3, 24]}
                 pr={[3, 24]}
                 placeholderSize={[13, 14]}
-                fontSize={[14, 15]}
+                fontSize="{[14, 15]}"
                 height={[40, 44]}
                 width={[1, 210, 240]}
               />
