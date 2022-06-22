@@ -28,7 +28,7 @@ const Wrapper = styled(Flex).attrs({
   }
 
   @media (min-width: 832px) and (max-width: 1076px) {
-    background-color: #ee4d7a;
+    background-color: #22292c;
   }
 `;
 
@@ -93,7 +93,7 @@ const NeedToLogin = () => (
     <Col
       alignItems={["left", "left", "flex-start"]}
       paddingTop="0px"
-      backgroundColor="#f1f2f4"
+      backgroundColor="#22292c"
     >
       <Title>
         JOSA's Own Link Shortener
@@ -109,7 +109,7 @@ const NeedToLogin = () => (
       </p>
     </Col>
     <Col
-    backgroundColor="#ee4d7a"
+    backgroundColor="#22292c"
     >
       <Image src="/images/bots.svg" />
     </Col>
