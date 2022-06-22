@@ -49,6 +49,19 @@ const WebsiteInfo = styled.div`
     padding: 0;
     justify-content: flex-start;
   }
+
+  img {
+    height: 25px;
+    vertical-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  br {
+    @media (min-width: 610px) {
+      display: none;
+    }
+  }
 `;
 
 const OtherInfo = styled.div`
@@ -124,12 +137,15 @@ const Para = styled.div`
     <FooterSection>
       <FooterContainer>
         <WebsiteInfo>
-          {"A website of "}
-          <img src="images/JOSALogoFooter.png" alt="JOSA Logo" />
-          {"JOSA . "}
-          {"Powered by "}
-          <img src="images/favicon-32x32.png" alt="Kutt's Logo" />
-          {"Kutt ."}
+          <p>
+            A website of 
+            <img src="images/JOSALogoFooter.png" alt="JOSA Logo" />
+            JOSA . {"  "}
+            <br />
+            Powered by 
+            <img src="images/favicon-32x32.png" alt="Kutt's Logo" />
+            Kutt .
+          </p>
         </WebsiteInfo>
         <OtherInfo>
           <SocialMedia>
