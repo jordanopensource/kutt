@@ -128,16 +128,6 @@ const Shortener = () => {
     return submitLink();
   };
 
-  const title = !link && (
-    <H1 fontSize={[25, 27, 32]} light>
-      Kutt your links{" "}
-      <Span style={{ borderBottom: "2px dotted #999" }} light>
-        shorter
-      </Span>
-      .
-    </H1>
-  );
-
   const result = link && (
     <Animation
       as={RowCenter}
@@ -186,10 +176,6 @@ const Shortener = () => {
 
   return (
     <Col width={800} maxWidth="100%" px={[3]} flex="0 0 auto" mt={4}>
-      <RowCenterH mb={[4, 48]}>
-        {title}
-        {result}
-      </RowCenterH>
       <Flex
         as="form"
         id="shortenerform"
