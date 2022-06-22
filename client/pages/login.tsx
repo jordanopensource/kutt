@@ -35,6 +35,8 @@ const Email = styled.span`
 
 const LoginWrapper = styled.div `
   background-color: #1a1f21;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const LoginPage = () => {
