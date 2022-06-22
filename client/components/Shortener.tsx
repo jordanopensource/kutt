@@ -185,7 +185,7 @@ const Shortener = () => {
   );
 
   return (
-    <Col width={800} maxWidth="100%" px={[3]} flex="0 0 auto" mt={4}>
+    <Col width={800} maxWidth="100%" px={[3]} flex="0 0 auto" mt={6}>
       <Flex
         as="form"
         id="shortenerform"
