@@ -94,7 +94,7 @@ const SettingsApi: FC = () => {
           </CopyToClipboard>
         </Flex>
       )}
-      <Button mt={3} color="purple" onClick={onSubmit} disabled={loading}>
+      <Button mt={3} color="green" onClick={onSubmit} disabled={loading}>
         <Icon name={loading ? "spinner" : "zap"} mr={2} stroke="white" />
         {loading ? "Generating..." : apikey ? "Regenerate" : "Generate"} key
       </Button>

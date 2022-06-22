@@ -84,7 +84,7 @@ const SettingsChangeEmail: FC = () => {
             />
           </Col>
         </Flex>
-        <Button type="submit" color="blue" mt={[24, 3]} disabled={loading}>
+        <Button type="submit" color="green" mt={[24, 3]} disabled={loading}>
           <Icon name={loading ? "spinner" : "refresh"} mr={2} stroke="white" />
           {loading ? "Sending..." : "Update"}
         </Button>

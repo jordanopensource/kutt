@@ -162,7 +162,7 @@ const SettingsDomain: FC = () => {
             />
           </Col>
         </Flex>
-        <Button type="submit" color="purple" mt={[24, 3]} disabled={loading}>
+        <Button type="submit" color="green" mt={[24, 3]} disabled={loading}>
           <Icon name={loading ? "spinner" : "plus"} mr={2} stroke="white" />
           {loading ? "Setting..." : "Set domain"}
         </Button>
