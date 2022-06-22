@@ -119,7 +119,10 @@ const Para = styled.div`
     <FooterSection>
       <FooterContainer>
         <WebsiteInfo>
-
+          {"A website of "}
+          {"JOSA . "}
+          {"Powered by "}
+          {"Kutt ."}
         </WebsiteInfo>
         <OtherInfo>
           <SocialMedia>
