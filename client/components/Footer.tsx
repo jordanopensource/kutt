@@ -31,6 +31,7 @@ const Footer: FC = () => {
       padding-left: 6rem;
       margin-right: 0;
       margin-left: 0;
+      padding-bottom: 5.5rem;
     }
 `;
 
