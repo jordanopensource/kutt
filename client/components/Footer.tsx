@@ -93,6 +93,7 @@ const ImageContainer = styled.div`
   img {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    height: 2rem;
   }
 `;
 
@@ -123,7 +124,6 @@ const Para = styled.div`
                   src="images/github.svg"
                   alt="Github Account"
                   width="auto"
-                  height="20"
                   />
               </a>
               <a href="https://twitter.com/jo_osa"
@@ -132,7 +132,6 @@ const Para = styled.div`
                   src="images/twitter.svg"
                   alt="Twitter Account"
                   width="auto"
-                  height="20"
                   />
               </a>
               <a href="https://www.facebook.com/jordanopensource/"
@@ -141,7 +140,6 @@ const Para = styled.div`
                     src="images/facebook.svg"
                     alt="Facebook Page"
                     width="auto"
-                    height="20"
                     />
               </a>
             </ImageContainer>
