@@ -610,7 +610,7 @@ const LinksTable: FC = () => {
 
   return (
     <Col width={1200} maxWidth="95%" margin="40px 0 120px" my={6}>
-      <H2 mb={3} light>
+      <H2 mb={3} color="#ffffff">
         Recent shortened links.
       </H2>
       <Table scrollWidth="800px">
