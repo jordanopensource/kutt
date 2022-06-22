@@ -125,6 +125,7 @@ const Para = styled.div`
       <FooterContainer>
         <WebsiteInfo>
           {"A website of "}
+          <img src="images/JOSALogoFooter.png" alt="JOSA Logo" />
           {"JOSA . "}
           {"Powered by "}
           {"Kutt ."}
