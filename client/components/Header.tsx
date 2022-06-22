@@ -99,7 +99,6 @@ const Header: FC = () => {
     <Flex
       minWidth="100%"
       p={[16, "0 32px"]}
-      mb={[32, 0]}
       height="10rem"
       justifyContent="space-around"
       alignItems={["flex-start", "center"]}
