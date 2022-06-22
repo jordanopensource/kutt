@@ -190,7 +190,7 @@ const CheckboxBox = styled(Flex).attrs({
         height: 80%;
         display: block;
         border-radius: 2px;
-        background-color: #9575cd;
+        background-color: #0b96ab;
         box-shadow: 0 2px 4px rgba(50, 50, 50, 0.2);
         cursor: pointer;
         animation: ${keyframes`
