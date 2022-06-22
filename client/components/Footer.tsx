@@ -103,10 +103,15 @@ const Para = styled.div`
   line-height: 1rem; 
   color: #ffffff; 
   font-weight:400;
+  height: 50px;
 
   @media (min-width: 992px) {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     line-height: 1.25rem; 
+  }
+
+  img {
+    vertical-align: middle;
   }
 `;
 
@@ -150,7 +155,7 @@ const Para = styled.div`
               <img 
                 src="images/cc.svg" 
                 alt="CC"
-                height="16"
+                height="25"
                 width="auto"
                 />
                {" 2022, JOSA - Jordan Open Source Association "}
