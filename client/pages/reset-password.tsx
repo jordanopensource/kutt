@@ -18,6 +18,7 @@ import NeedToLogin from "../components/NeedToLogin";
 import { useMessage } from "../hooks";
 import Icon from "../components/Icon";
 import { API, APIv2 } from "../consts";
+import Footer from "../components/Footer";
 
 interface Props {
   token?: string;
@@ -101,6 +102,7 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
           {message.text}
         </Text>
       </Col>
+      <Footer />
     </AppWrapper>
   );
 };
