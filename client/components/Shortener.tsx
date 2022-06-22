@@ -22,21 +22,31 @@ const SubmitIconWrapper = styled.div`
   content: "";
   position: absolute;
   top: 0;
-  right: 12px;
-  width: 64px;
+  right: 0;
+  width: auto;
   height: 100%;
   display: flex;
+  padding-right: 1rem;
+  padding-left: 1rem;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size: 1.25rem;
+  color: #ffffff;
+  background-color: #0b96ab;
+  font-weight: bolder;
 
   :hover svg {
     fill: #673ab7;
   }
   @media only screen and (max-width: 448px) {
-    right: 8px;
-    width: 40px;
+    right: 0;
+    padding-right: 0;
+    padding-left: 0.7rem;
+    font-size: 1rem;
   }
+
+  
 `;
 
 const ShortenedLink = styled(H1)`
@@ -200,13 +210,15 @@ const Shortener = () => {
           data-lpignore
         />
         <SubmitIconWrapper onClick={onSubmit} role="button" aria-label="submit">
+          Shorten
           <Icon
             name={loading ? "spinner" : "send"}
             size={[22, 26, 28]}
-            fill={loading ? "none" : "#aaa"}
+            fill={loading ? "none" : "#ffffff"}
             stroke={loading ? Colors.Spinner : "none"}
             mb={1}
             mr={1}
+            minWidth="50px"
           />
         </SubmitIconWrapper>
       </Flex>
