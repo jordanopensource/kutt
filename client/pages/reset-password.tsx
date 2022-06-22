@@ -66,7 +66,6 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
   // FIXME: make a container for width
   return (
     <AppWrapper>
-      <NeedToLogin />
       <Col width={600} maxWidth="100%" px={3}>
         <H2 my={3} bold>
           Reset password

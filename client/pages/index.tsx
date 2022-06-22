@@ -4,7 +4,7 @@ import Router from "next/router";
 import { DISALLOW_ANONYMOUS_LINKS } from "../consts";
 import NeedToLogin from "../components/NeedToLogin";
 import LinksTable from "../components/LinksTable";
-import AppWrapper from "../components/AppWrapper";
+import AppWrapperBlack from "../components/AppWrapperBlack";
 import Shortener from "../components/Shortener";
 import Footer from "../components/Footer";
 import { useStoreState } from "../store";
@@ -22,12 +22,11 @@ const Homepage = () => {
   }
 
   return (
-    <AppWrapper>
-      <NeedToLogin />  
+    <AppWrapperBlack>
       {isAuthenticated && <Shortener />} 
-      {isAuthenticated && <LinksTable />} 
+      {isAuthenticated && <LinksTable />}
       <Footer />
-    </AppWrapper>
+    </AppWrapperBlack>
   );
 };
 
