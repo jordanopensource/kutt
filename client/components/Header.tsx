@@ -101,7 +101,7 @@ const Header: FC = () => {
       p={[16, "0 32px"]}
       height="10rem"
       justifyContent="space-around"
-      alignItems={["flex-start", "center"]}
+      alignItems={["center", "center"]}
       backgroundColor="#1a1f21"
     >
       <Flex
@@ -130,6 +130,7 @@ const Header: FC = () => {
             mb="3px"
             m={0}
             p={0}
+            mr={250}
           >
           </Flex>
         )}
