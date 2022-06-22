@@ -128,6 +128,7 @@ const Para = styled.div`
           <img src="images/JOSALogoFooter.png" alt="JOSA Logo" />
           {"JOSA . "}
           {"Powered by "}
+          <img src="images/favicon-32x32.png" alt="Kutt's Logo" />
           {"Kutt ."}
         </WebsiteInfo>
         <OtherInfo>
