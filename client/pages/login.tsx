@@ -106,6 +106,7 @@ const LoginPage = () => {
 
   return (
     <AppWrapperBlack>
+      <NeedToLogin />
       <LoginWrapper>
       <ColCenterV maxWidth="100%" px={3} flex="0 0 auto" mt={4}>
         {verifying ? (

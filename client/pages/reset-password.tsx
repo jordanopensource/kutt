@@ -8,7 +8,6 @@ import cookie from "js-cookie";
 import axios from "axios";
 
 import { useStoreState, useStoreActions } from "../store";
-import AppWrapper from "../components/AppWrapper";
 import { TextInput } from "../components/Input";
 import { Button } from "../components/Button";
 import Text, { H2 } from "../components/Text";
@@ -19,6 +18,7 @@ import { useMessage } from "../hooks";
 import Icon from "../components/Icon";
 import { API, APIv2 } from "../consts";
 import Footer from "../components/Footer";
+import AppWrapperBlack from "../components/AppWrapperBlack";
 
 interface Props {
   token?: string;
@@ -65,16 +65,17 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
 
   // FIXME: make a container for width
   return (
-    <AppWrapper>
-      <Col width={600} maxWidth="100%" px={3}>
-        <H2 my={3} bold>
+    <AppWrapperBlack>
+      <NeedToLogin />
+      <Col width={600} height={400} maxWidth="100%" px={3}>
+        <H2 mb={3} mt={5} bold fontSize="1.5rem" color="#ffffff">
           Reset password
         </H2>
-        <Text mb={4}>
+        <Text color="#ffffff" fontSize="1.1rem" mb={4}>
           If you forgot you password you can use the form below to get reset
           password link.
         </Text>
-        <Text {...label("homepage")} as="label" mt={2} fontSize={[15, 16]} bold>
+        <Text {...label("homepage")} as="label" mt={2} color="#ffffff" fontSize="1rem" bold>
           Email address
         </Text>
         <Flex
@@ -92,7 +93,7 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
             autoFocus
             required
           />
-          <Button type="submit" height={[40, 44]} my={3}>
+          <Button type="submit" height={[40, 44]} my={3} fontSize="1rem">
             {loading && <Icon name={"spinner"} stroke="white" mr={2} />}
             Reset password
           </Button>
@@ -102,7 +103,7 @@ const ResetPassword: NextPage<Props> = ({ token }) => {
         </Text>
       </Col>
       <Footer />
-    </AppWrapper>
+    </AppWrapperBlack>
   );
 };
 
