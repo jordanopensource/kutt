@@ -19,6 +19,7 @@ import Text, { H2 } from "../components/Text";
 import ALink from "../components/ALink";
 import Icon from "../components/Icon";
 import Footer from "../components/Footer";
+import AppWrapperBlack from "../components/AppWrapperBlack";
 
 const LoginForm = styled(Flex).attrs({
   as: "form",
@@ -34,7 +35,7 @@ const Email = styled.span`
 `;
 
 const LoginWrapper = styled.div `
-  background-color: #1a1f21;
+  background-color: none;
   margin-top: 4rem;
   margin-bottom: 4rem;
 `;
@@ -104,7 +105,7 @@ const LoginPage = () => {
   }
 
   return (
-    <AppWrapper>
+    <AppWrapperBlack>
       <LoginWrapper>
       <ColCenterV maxWidth="100%" px={3} flex="0 0 auto" mt={4}>
         {verifying ? (
@@ -181,7 +182,7 @@ const LoginPage = () => {
       </ColCenterV>
       </LoginWrapper>
       <Footer />
-    </AppWrapper>
+    </AppWrapperBlack>
   );
 };
 
