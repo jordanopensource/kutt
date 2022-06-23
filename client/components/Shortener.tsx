@@ -255,6 +255,7 @@ const Shortener = () => {
                 fontSize={[14, 15]}
                 mb={2}
                 bold
+                color="#ffffff"
               >
                 Domain:
               </Text>
@@ -282,6 +283,7 @@ const Shortener = () => {
                 fontSize={[14, 15]}
                 mb={2}
                 bold
+                color="#ffffff"
               >
                 {formState.values.domain || defaultDomain}/
               </Text>
@@ -305,6 +307,7 @@ const Shortener = () => {
                 fontSize={[14, 15]}
                 mb={2}
                 bold
+                color="#ffffff"
               >
                 Password:
               </Text>
@@ -330,6 +333,7 @@ const Shortener = () => {
                 fontSize={[14, 15]}
                 mb={2}
                 bold
+                color="#ffffff"
               >
                 Expire in:
               </Text>
@@ -353,6 +357,7 @@ const Shortener = () => {
                 fontSize={[14, 15]}
                 mb={2}
                 bold
+                color="#ffffff"
               >
                 Description:
               </Text>
