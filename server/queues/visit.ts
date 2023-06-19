@@ -7,15 +7,15 @@ import { getStatsLimit, removeWww } from "../utils";
 
 const browsersList = ["IE", "Firefox", "Chrome", "Opera", "Safari", "Edge"];
 const osList = ["Windows", "Mac OS", "Linux", "Android", "iOS"];
-const filterInBrowser = agent => item =>
+const filterInBrowser = (agent) => (item) =>
   agent.family.toLowerCase().includes(item.toLocaleLowerCase());
-const filterInOs = agent => item =>
+const filterInOs = (agent) => (item) =>
   agent.os.family.toLowerCase().includes(item.toLocaleLowerCase());
 
-export default function({ data }) {
+export default function visit({ data }) {
   const tasks = [];
 
-  tasks.push(query.link.increamentVisit({ id: data.link.id }));
+  tasks.push(query.link.incrementVisit({ id: data.link.id }));
 
   if (data.link.visit_count < getStatsLimit()) {
     const agent = useragent.parse(data.headers["user-agent"]);

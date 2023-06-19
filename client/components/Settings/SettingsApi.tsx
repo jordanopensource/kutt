@@ -1,5 +1,5 @@
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { Flex } from "reflexbox/styled-components";
+import { Flex } from "rebass/styled-components";
 import React, { FC, useState } from "react";
 import styled from "styled-components";
 
@@ -32,13 +32,13 @@ const SettingsApi: FC = () => {
   const [copied, setCopied] = useCopy();
   const [message, setMessage] = useMessage(1500);
   const [loading, setLoading] = useState(false);
-  const apikey = useStoreState(s => s.settings.apikey);
-  const generateApiKey = useStoreActions(s => s.settings.generateApiKey);
+  const apikey = useStoreState((s) => s.settings.apikey);
+  const generateApiKey = useStoreActions((s) => s.settings.generateApiKey);
 
   const onSubmit = async () => {
     if (loading) return;
     setLoading(true);
-    await generateApiKey().catch(err => setMessage(errorMessage(err)));
+    await generateApiKey().catch((err) => setMessage(errorMessage(err)));
     setLoading(false);
   };
 
@@ -49,7 +49,7 @@ const SettingsApi: FC = () => {
       </H2>
       <Text mb={4}>
         In additional to this website, you can use the API to create, delete and
-        get shortend URLs. If
+        get shortened URLs. If
         {" you're"} not familiar with API, {"don't"} generate the key. DO NOT
         share this key on the client side of your website.{" "}
         <ALink href="https://docs.kutt.it" title="API Docs" target="_blank">
